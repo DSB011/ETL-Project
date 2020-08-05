@@ -18,14 +18,16 @@ CREATE TABLE zip_demographics (
 );
 
 CREATE TABLE water_tank_inspections (
-  zip INT,
-  Bin INT,
-  Confirmation_num VARCHAR,
-  Tank_num INT,
-  reporting_year INT,
-  inspection_by_firm TEXT,
-  lab_name TEXT,
-  nys_certified TEXT,
-  latitude INT,
-  longitude INT
+  ZIP INT,
+  BIN INT,
+  CONFIRMATION_NUM VARCHAR,
+  TANK_NUM INT,
+  REPORTING_YEAR INT,
+  INSPECTION_BY_FIRM TEXT,
+  LAB_NAME TEXT,
+  NYS_CERTIFIED TEXT,
+  SI_RESULT_BIOLOGICAL_GROWTH VARCHAR(1),
+  LATITUDE INT,
+  LONGITUDE INT,
+  PRIMARY KEY(Confirmation_num, Tank_num)
 );
