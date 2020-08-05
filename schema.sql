@@ -18,10 +18,10 @@ CREATE TABLE zip_demographics (
 );
 
 CREATE TABLE water_tank_inspections (
-  id SERIAL PRIMARY KEY,
   zip INT,
   Bin INT,
   Confirmation_num VARCHAR,
+  Tank_num INT,
   reporting_year INT,
   inspection_by_firm TEXT,
   lab_name TEXT,
