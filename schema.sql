@@ -18,8 +18,14 @@ CREATE TABLE zip_demographics (
 );
 
 CREATE TABLE water_tank_inspections (
-  id INT PRIMARY KEY,
-  county_name TEXT,
-  license_count INT,
-  county_id INT
+  id SERIAL PRIMARY KEY,
+  zip INT,
+  Bin INT,
+  Confirmation_num VARCHAR,
+  reporting_year INT,
+  inspection_by_firm TEXT,
+  lab_name TEXT,
+  nys_certified TEXT,
+  latitude INT,
+  longitude INT
 );
