@@ -19,7 +19,7 @@ CREATE TABLE zip_demographics (
 );
 DROP TABLE IF EXISTS water_tank_inspections; 
 CREATE TABLE water_tank_inspections (
-  ZIP VARCHAR,
+  ZIP INT,
   BIN BIGINT,
   CONFIRMATION_NUM VARCHAR,
   TANK_NUM INT,
