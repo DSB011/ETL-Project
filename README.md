@@ -1,24 +1,20 @@
 # ETL-Project
-## Group ETL Project
+## Group ETL Project: NYC Water Tank Inspections by Demographics
 
 ## Extract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
-NYC Water Tank Inspections by Demographics
+Our group looked for two NYC data sets we could join. We started looking at kaggle and data.world. Kaggle had an iteresting data set for NYC Water Tank Inspections.
 
-Rooftop Drinking Water Tank Inspection Results &amp; Zip code demographic statistic
+The Kaggle download was subobtimal so we looked into the direct data source: data.cityofnewyork.us
 
-Sources
+There we found the CSV file we could extract:
+[Rooftop Drinking Water Tank Inspection Results](https://data.cityofnewyork.us/Health/Rooftop-Drinking-Water-Tank-Inspection-Results/gjm4-k24g)
 
-1) [Rooftop Drinking Water Tank Inspection Results](https://data.cityofnewyork.us/Health/Rooftop-Drinking-Water-Tank-Inspection-Results/gjm4-k24g)
-import dsv
+Next we reviewed the water tank csv to consider what we could link. The file contained the zip code in a column called JURISICTION NAME. With that, we searched for zip code data to combine.
 
-retain columns
+We found demographics data on the same data.cityofnewyork.us site:
+[Zip code demographic statistics](https://data.cityofnewyork.us/City-Government/Zip-code-breakdowns/6bic-qvek)
 
-
-rename columns
-
-
-2) [Zip code demographic statistics](https://data.cityofnewyork.us/City-Government/Zip-code-breakdowns/6bic-qvek)
-
+Thus the project to combine Rooftop Drinking Water Tank Inspection Results &amp; Zip code demographic statistic was born.
 
 ## Transform: what data cleaning or transformation was required.
 
