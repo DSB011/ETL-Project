@@ -1,6 +1,9 @@
 # ETL-Project
 ## Group ETL Project: NYC Water Tank Inspections by Demographics
 
+## About this Project
+We wanted to know how clean the Drinking water tanks in different NYC boroughs and neighbourhoods. We wanted to understand the ethnicity of each area to better know who is affected by various levels of water cleanliness
+
 ## Extract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
 Our group looked for two NYC data sets we could join. We started looking at kaggle and data.world. Kaggle had an iteresting data set for NYC Water Tank Inspections.
 
@@ -17,6 +20,7 @@ We found demographics data on the same data.cityofnewyork.us site:
 Thus the project to combine Rooftop Drinking Water Tank Inspection Results &amp; Zip code demographic statistic was born.
 
 ## Transform: what data cleaning or transformation was required.
+### We selected the relevant columns and re-named them. We looked for any null values and we used the columns where we could get the primary key.
 
 Zip Code Demographics
 import csv
@@ -56,5 +60,8 @@ PERCENT CITIZEN STATUS UNKNOWN : percent_citizen_status_unknown
 
 
 ## Load: the final database, tables/collections, and why this was chosen.
+After selecting the columns we converted it into a dataframe , we created table and using postgreSQL relational database and loaded the final dataframe. 
+We created the tables for zip_demographics and water_tank_inspections and combined them on zip. We wanted to focus on the zip code, because it was the most specific way to link community and water inspections . This allowed us to analyze how clean the water is in all NYC zip codes.
+
 
 
