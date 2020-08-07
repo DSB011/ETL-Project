@@ -1,10 +1,10 @@
 # ETL-Project
 ## Group ETL Project
 
-Rooftop Drinking Water Tank Inspection Results &amp; Zip code demographic statistics
-
-
+## Extract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
 NYC Water Tank Inspections by Demographics
+
+Rooftop Drinking Water Tank Inspection Results &amp; Zip code demographic statistic
 
 Sources
 
@@ -17,9 +17,12 @@ retain columns
 rename columns
 
 
-2) Zip code demographic statistics
-https://data.cityofnewyork.us/City-Government/Zip-code-breakdowns/6bic-qvek
+2) [Zip code demographic statistics](https://data.cityofnewyork.us/City-Government/Zip-code-breakdowns/6bic-qvek)
 
+
+## Transform: what data cleaning or transformation was required.
+
+Zip Code Demographics
 import csv
 retain columns
 JURISDICTION NAME
@@ -56,5 +59,6 @@ PERCENT OTHER CITIZEN STATUS : percent_other_citizen_status
 PERCENT CITIZEN STATUS UNKNOWN : percent_citizen_status_unknown
 
 
-Link by zip code!
+## Load: the final database, tables/collections, and why this was chosen.
+
 
